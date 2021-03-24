@@ -1,8 +1,34 @@
 .grid-container {
-  color: blue;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: 20% 40% auto auto;
+  height: 100%;
+  width: 100%;
 }
 
 .button {
   background-color: rebeccapurple;
   color: red;
+}
+
+.header {
+  background-color: blue;
+  grid-template-columns: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+img {
+  width: 300px;
+}
+
+.beacon {
+  background-color: aquamarine;
+}
+
+.three {
+  background-color: purple;
+}
+.footer {
+  background-color: yellow;
 }
