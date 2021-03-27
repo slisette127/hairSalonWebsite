@@ -27,11 +27,14 @@
 }
 
 h1 {
-  display: flex;
-  justify-content: center;
-  padding: 5px;
   color: white;
-  background-color: black;
+  display: table; 
+  margin-top: 20px;
+  padding:15px;
+  font-size:30px;
+  background-color:black;
+  letter-spacing: 1px;;
+  
 }
 
 .flex-container {
@@ -40,13 +43,14 @@ h1 {
   -ms-flex-wrap: wrap; 
   flex-wrap: wrap;
   justify-content: center;
+  margin-bottom: 50px;
 }
 
 .column {
   display: block;
   -ms-flex: 25%; 
   flex: 100%;
-  max-width: 18%;
+  max-width: 20%;
   padding: 5px 5px 5px 5px;
   position: relative;
   
@@ -77,7 +81,27 @@ h1 {
 .img1-wrap:hover {
   opacity: 1;
   background: rgba(0, 0, 0, 0.5);
+}
+
+footer {
+  background-color: rgb(37,37,37);
+  height: 120px;
+  margin-bottom: 50px;
+  color: white;
   
+}
+
+.socialmedia {
+  color:  rgb(37,37,37);
+  background-color: white;
+  border: 1px solid white;
+  height: 30px;
+  width: 30px;
+}
+
+
+p {
+  padding: 50px 0 50px 200px;
 }
 
 @media screen and (max-width: 600px) {
