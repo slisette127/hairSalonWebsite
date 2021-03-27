@@ -6,10 +6,33 @@
   width: 100%;
 }
 
-.button {
-  background-color: rebeccapurple;
-  color: red;
+.navbar {
+  top: 0;
+  width: 100%;
+  text-align: center;
+  grid-column: 2;
 }
+
+.navbar a {
+  float: center;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background: white;
+  color: rgb(11,163,156);
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+}
+
 
 .header {
   grid-column: 1 / span 3;
@@ -21,9 +44,6 @@
   
 }
 
-.button {
-  color: red;
-}
 
 img {
   width: 300px;
