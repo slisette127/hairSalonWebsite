@@ -4,6 +4,7 @@
   width: 100%;
   text-align: center;
   grid-column: 2;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 .navbar a {
