@@ -33,7 +33,7 @@ h1 {
   padding:15px;
   font-size:30px;
   background-color:black;
-  letter-spacing: 1px;;
+  letter-spacing: 1px;
   text-align: center;
  
 }
@@ -52,4 +52,16 @@ input[type=text] {
   border: 2px solid black;
   text-align: center;
   font-size: 15px;
+}
+
+#message {
+  height: 50px;
+  width: 50%;
+  border: 2px solid black;
+}
+
+ .send{
+  background-color: blue;
+  color: black;
+ 
 }

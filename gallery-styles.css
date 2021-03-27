@@ -34,7 +34,12 @@ h1 {
   font-size:30px;
   background-color:black;
   letter-spacing: 1px;;
-  
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .flex-container {
@@ -101,7 +106,7 @@ footer {
 
 
 p {
-  padding: 50px 0 50px 200px;
+  /* padding: 50px 0 50px 200px; */
 }
 
 @media screen and (max-width: 600px) {
