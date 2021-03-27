@@ -32,6 +32,58 @@ h1 {
   padding: 5px;
   color: white;
   background-color: black;
-  margin-left: 300px;
-  margin-right: 300px;
+}
+
+.flex-container {
+  display: -ms-flexbox; 
+  display: flex;
+  -ms-flex-wrap: wrap; 
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.column {
+  display: block;
+  -ms-flex: 25%; 
+  flex: 100%;
+  max-width: 18%;
+  padding: 5px 5px 5px 5px;
+  position: relative;
+  
+}
+
+.column img {
+  display: block;
+  position: relative;
+  margin-top: 10px;
+  width: 100%;
+  height: auto;
+  border: 1px solid black;
+}
+
+.overlay { 
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background: rgba(0, 0, 0, 0.5);
+} 
+
+.img1-wrap:hover {
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.5);
+  
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
 }
