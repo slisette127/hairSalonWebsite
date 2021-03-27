@@ -1,0 +1,51 @@
+
+.navbar {
+  top: 0;
+  width: 100%;
+  text-align: center;
+  grid-column: 2;
+}
+
+.navbar a {
+  float: center;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background: white;
+  color: rgb(11,163,156);
+}
+
+
+
+.grid-container {
+  grid-template-columns: 33% 34% 33%;
+  grid-template-rows: 45% 45% 10%;
+}
+.aboutGuy {
+ outline-style: solid;
+ width: 100%;
+}
+
+.start {
+  display: flex;
+  text-align: center;
+  grid-column: 2;
+  grid-row: 1;
+  background-color: red;
+}
+
+.stuff {
+  grid-column: 2;
+  grid-row: 2;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 500px;
+  background-color: purple;
+}
