@@ -39,52 +39,155 @@ h1 {
 }
 
 .grid {
-  grid-template-columns: 40% 60%;
+  display: grid;
+  grid-template-columns: 400px 490px;
   grid-template-rows: auto auto auto;
+  justify-content: center;
+  
+  
 }
 
 .box1 {
-  background-color: red;
   grid-column: 1;
   grid-row: 1;
-  display: flex;
+  width: 100%;
+  border: 2px solid black;
+  margin-top: 10px;
+  
 
 }
 
 .box2 {
-  background-color: purple;
+  grid-column: 2;
+  grid-row: 1;
+  width: 100%;
+  border: 2px solid black;
+  margin-top: 10px;
   display: flex;
   flex-direction: column;
-  width: 50%;
+  text-align: center;
+  
 }
 
 .box3 {
-  background-color: blue;
   grid-column: 1;
   grid-row: 2;
   display: flex;
+  width: 100%;
+  border: 2px solid black;
+  margin-top: 10px;
 }
 
 .box4 {
-  background-color: aqua;
+  width: 100%;
+  border: 2px solid black;
+  margin-top: 10px;
   display: flex;
   flex-direction: column;
-  width: 50%;
+  text-align: center;
+  
 }
 
 .box5 {
-  background-color: orange;
   grid-column: 1;
   grid-row: 3;
   display: flex;
-}
-.box6 {
-  background-color: pink;
-  display: flex;
-  flex-direction: column;
-  width: 50%;
+  width: 100%;
+  border: 2px solid black;
+  margin-top: 10px;
 }
 
-img {
+.box6 {
+  width: 100%;
+  border: 2px solid black;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+button {
+  width: 150px;
+  color: white;
+  background-color: black;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+}
+
+/* img {
+  width: 390px;
+} */
+
+footer {
+  display: flex;
+  flex: row;
+  background-color: rgb(37,37,37);
+  height: 120px;
+  margin-bottom: 50px;
+  color: white;
+}
+
+h6{
+  padding-top: 20px;
+  padding-left: 50px;
+}
+
+.socialmedia {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  color:  rgb(37,37,37);
+  background-color: white;
+  height: 45px;
+  padding: 5px;
+  margin: 10px;
+}
+
+.smicons {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: end;
+  margin: auto 0 auto auto;
   width: 400px;
 }
+
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+
+    .navbar {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      flex: 100%;
+      font-size: 40px;
+    }
+  
+    .buttons {
+      display: flex;
+      flex-direction: column;
+      font-size: 50px;
+    }
+  
+   footer {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-wrap: wrap;
+     background-color: rgb(37,37,37);
+     height: 200px;
+     flex: 50%;
+   }
+   
+    .smicons {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex: 50%;
+    }
+  }
