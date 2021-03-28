@@ -27,9 +27,11 @@
   justify-content: center;
 }
 
-.grid-container {
-  /* grid-template-columns: 33% 34% 33%;
-  grid-template-rows: 45% 45% 10%; */
+
+h1{
+  background-color: rgb(37,37,37);
+  color: white;
+  padding: 0 10px 0 10px;
 }
 
 .aboutGuy {
@@ -39,23 +41,34 @@
 }
 
 .img1 {
-border: 1px solid black;
+border: 2px solid black;
 }
 
 .start {
   display: flex;
   text-align: center;
-  grid-column: 2;
-  grid-row: 1;
-  background-color: red;
+  justify-content: center;
+  font-family: 'Changa', sans-serif;
+  font-size: 30px;
 }
 
 .stuff {
+  display: flex;
+  flex-direction: column;
   text-align: center;
+  justify-content: center;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 35px;
   width: 500px;
-  margin: 0px 400px 00px 400px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 20px;
+  margin: 0 0 0 0;
 }
 
 p {
   line-height: 20px;
+  margin: 0 0 0 0;
 }
