@@ -55,28 +55,36 @@ h1 {
   background-color: purple;
   display: flex;
   flex-direction: column;
+  width: 50%;
 }
 
 .box3 {
   background-color: blue;
   grid-column: 1;
   grid-row: 2;
+  display: flex;
 }
 
 .box4 {
-  background-color: yellow;
-  grid-column: 2;
-  grid-row: 2;
+  background-color: aqua;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
 }
 
 .box5 {
   background-color: orange;
   grid-column: 1;
   grid-row: 3;
+  display: flex;
+}
+.box6 {
+  background-color: pink;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
 }
 
-.box6 {
-  background-color: PINK;
-  grid-column: 2;
-  grid-row: 3;
+img {
+  width: 400px;
 }
