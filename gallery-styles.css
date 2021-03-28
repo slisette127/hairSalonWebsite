@@ -131,4 +131,36 @@ p{
     flex: 100%;
     max-width: 100%;
   }
+
+    .navbar {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      flex: 100%;
+      font-size: 40px;
+    }
+  
+    .buttons {
+      display: flex;
+      flex-direction: column;
+      font-size: 50px;
+    }
+  
+   footer {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-wrap: wrap;
+     background-color: rgb(37,37,37);
+     height: 200px;
+     flex: 50%;
+   }
+   
+    .smicons {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex: 50%;
+    }
+  }
 }
