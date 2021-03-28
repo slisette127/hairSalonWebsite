@@ -116,12 +116,14 @@ h6{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    flex: 100%
+    flex: 100%;
+    font-size: 40px;
   }
 
   .buttons {
     display: flex;
     flex-direction: column;
+    font-size: 50px;
   }
   .start {
     display: flex;
@@ -135,6 +137,7 @@ h6{
     flex: 100%;
     max-width: 100%;
   }
+
  .stuff {
    display: flex;
    flex-direction: column;
@@ -142,8 +145,13 @@ h6{
    flex: 100%;
    max-width: 100%;
  }
+
  .aboutGuy {
    display: flex;
+ }
+
+ .img1 {
+   max-width: 350px;
  }
 
  footer {
@@ -155,12 +163,11 @@ h6{
    height: 200px;
    flex: 50%;
  }
+ 
   .smicons {
     display: flex;
     align-items: center;
     justify-content: center;
     flex: 50%;
-
   }
-
 }
