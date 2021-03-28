@@ -31,16 +31,18 @@ h1 {
   color: white;
   display: table; 
   margin-top: 20px;
-  padding:15px;
-  font-size:30px;
-  background-color:black;
-  letter-spacing: 1px;;
+  padding: 0 10px 0 10px; 
+  font-size:40px;
+  background-color: rgb(37,37,37);
+  letter-spacing: 1px;
 }
 
 .header {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-family: 'Changa', sans-serif;
+  font-size: 30px;
 }
 
 .flex-container {
@@ -90,24 +92,37 @@ h1 {
 }
 
 footer {
+  display: flex;
+  flex: row;
   background-color: rgb(37,37,37);
   height: 120px;
   margin-bottom: 50px;
   color: white;
-  
+}
+
+p{
+  padding-top: 20px;
+  padding-left: 50px;
 }
 
 .socialmedia {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
   color:  rgb(37,37,37);
   background-color: white;
-  border: 1px solid white;
-  height: 30px;
-  width: 30px;
+  height: 45px;
+  padding: 5px;
+  margin: 10px;
 }
 
-
-p {
-  /* padding: 50px 0 50px 200px; */
+.smicons {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: end;
+  margin: auto 0 auto auto;
+  width: 400px;
 }
 
 @media screen and (max-width: 600px) {

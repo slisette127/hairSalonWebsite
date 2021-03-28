@@ -31,7 +31,10 @@
 h1{
   background-color: rgb(37,37,37);
   color: white;
-  padding: 0 10px 0 10px;
+  padding: 0 10px 0 10px; 
+  margin-top: 20px;
+  font-size: 40px;
+  letter-spacing: 1px;
 }
 
 .aboutGuy {
@@ -57,6 +60,7 @@ border: 2px solid black;
   flex-direction: column;
   text-align: center;
   justify-content: center;
+  /* margin: 0 400px 0 400px; */
   font-family: 'Open Sans', sans-serif;
   line-height: 35px;
   width: 500px;
@@ -71,4 +75,46 @@ h2 {
 p {
   line-height: 20px;
   margin: 0 0 0 0;
+}
+
+footer {
+  display: flex;
+  flex: row;
+  background-color: rgb(37,37,37);
+  height: 120px;
+  margin-bottom: 50px;
+  color: white;
+}
+
+p{
+  padding-top: 20px;
+  padding-left: 50px;
+}
+
+.socialmedia {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  color:  rgb(37,37,37);
+  background-color: white;
+  height: 45px;
+  padding: 5px;
+  margin: 10px;
+}
+
+.smicons {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: end;
+  margin: auto 0 auto auto;
+  width: 400px;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
 }
