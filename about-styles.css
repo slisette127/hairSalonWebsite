@@ -60,7 +60,6 @@ border: 2px solid black;
   flex-direction: column;
   text-align: center;
   justify-content: center;
-  /* margin: 0 400px 0 400px; */
   font-family: 'Open Sans', sans-serif;
   line-height: 35px;
   width: 500px;
@@ -86,9 +85,10 @@ footer {
   color: white;
 }
 
-p{
+h6{
   padding-top: 20px;
   padding-left: 50px;
+  font-size: 12px;
 }
 
 .socialmedia {
@@ -112,9 +112,55 @@ p{
 }
 
 @media screen and (max-width: 600px) {
-  .column {
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex: 100%
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: column;
+  }
+  .start {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .grid-container {
+    display: flex;
+    flex-direction: column;
     -ms-flex: 100%;
     flex: 100%;
     max-width: 100%;
   }
+ .stuff {
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   flex: 100%;
+   max-width: 100%;
+ }
+ .aboutGuy {
+   display: flex;
+ }
+
+ footer {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-wrap: wrap;
+   background-color: rgb(37,37,37);
+   height: 200px;
+   flex: 50%;
+ }
+  .smicons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 50%;
+
+  }
+
 }
