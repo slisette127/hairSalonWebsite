@@ -31,13 +31,20 @@ h1 {
   color: white;
   display: table; 
   margin-top: 20px;
-  padding:15px;
-  font-size:30px;
-  background-color:black;
+  padding: 0 10px 0 10px; 
+  font-size:40px;
+  background-color: rgb(37,37,37);
   letter-spacing: 1px;
-  text-align: center;
- 
 }
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Changa', sans-serif;
+  font-size: 30px;
+}
+
 
 form {
   display: flex;
@@ -56,13 +63,107 @@ input[type=text] {
 }
 
 #message {
-  height: 50px;
+  height: 175px;
   width: 50%;
   border: 2px solid black;
 }
 
  .send{
-  background-color: blue;
-  color: black;
- 
+  background-color: rgb(37,37,37);
+  color: white;
+  padding: 15px;
+  font-size: 20px;
+  border: none;
+  font-family: 'Changa', sans-serif;
+  letter-spacing: 1px;
+  width: 100px;
 }
+footer {
+  display: flex;
+  flex: row;
+  background-color: rgb(37,37,37);
+  height: 120px;
+  margin-bottom: 50px;
+  color: white;
+}
+
+p{
+  padding-top: 20px;
+  padding-left: 50px;
+}
+
+.socialmedia {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  color:  rgb(37,37,37);
+  background-color: white;
+  height: 45px;
+  padding: 5px;
+  margin: 10px;
+}
+
+.smicons {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: end;
+  margin: auto 0 auto auto;
+  width: 400px;
+}
+
+@media screen and (max-width: 600px) {
+    .navbar {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      flex: 100%;
+      font-size: 40px;
+    }
+  
+    .buttons {
+      display: flex;
+      flex-direction: column;
+      font-size: 50px;
+    }
+  .header {
+    display: flex;
+    text-align: center;
+  }
+  input[type=text] {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  #message {
+    height: 175px;
+    width: 100%;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+  }
+  
+   footer {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-wrap: wrap;
+     background-color: rgb(37,37,37);
+     height: 200px;
+     flex: 50%;
+   }
+   
+    .smicons {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex: 50%;
+    }
+  }
