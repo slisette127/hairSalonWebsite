@@ -1,7 +1,7 @@
 .grid-container {
   display: grid;
   grid-template-columns: 33% 34% 33%;
-  grid-template-rows: 15% 50% 30% auto;
+  grid-template-rows: 15% 50%  auto;
   height: auto;
   width: 100%;
   font-family: 'Source Sans Pro', sans-serif;
@@ -34,7 +34,6 @@
   justify-content: center;
 }
 
-
 .header {
   grid-column: 1 / span 3;
   grid-row: 1;
@@ -44,10 +43,6 @@
   padding-bottom: 20px;
 }
 
-img {
-  width: 300px;
-}
-
 .beacon {
   grid-column: 1 / span 3;
   grid-row: 2;
@@ -55,7 +50,8 @@ img {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 500px;
+  height: 450px;
+  margin-top: 40px;
 }
 .mankind {
   grid-column: 3;
@@ -104,17 +100,95 @@ p {
   display: flex;
   flex-direction: column;
   border: 2px solid black;
-  margin: 0 5px 0 10px;
+  margin: 10px 5px 0 10px;
 }
 
 h2 {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  margin-top: 0;
 }
 
-.footer {
-  background-color: yellow;
-  grid-column: 1 / span 3;
-  grid-row: 4;
+footer {
+  display: flex;
+  flex: row;
+  background-color: rgb(37,37,37);
+  height: 120px;
+  margin-bottom: 50px;
+  color: white;
 }
+
+h6{
+  padding-top: 20px;
+  padding-left: 50px;
+  font-size: 15px;
+  font-family: sans-serif;
+}
+
+.socialmedia {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  color:  rgb(37,37,37);
+  background-color: white;
+  height: 45px;
+  padding: 5px;
+  margin: 10px;
+}
+
+.smicons {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: end;
+  margin: auto 0 auto auto;
+  width: 400px;
+}
+
+
+
+@media screen and (max-width: 600px) {
+   .navbar {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      flex: 100%;
+      font-size: 40px;
+    }
+  
+    .buttons {
+      display: flex;
+      flex-direction: column;
+      font-size: 50px;
+    }
+
+    .grid-container {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
+  
+      .three {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+   footer {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-wrap: wrap;
+     background-color: rgb(37,37,37);
+     height: 200px;
+     flex: 50%;
+   }
+   
+    .smicons {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex: 50%;
+    }
+  }
